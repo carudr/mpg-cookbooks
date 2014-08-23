@@ -7,6 +7,6 @@ server {
   location / {
     root   /var/www/nginx-default;
     index  index.html index.htm;
-    try_files $uri $uri/ /index.html?/$request_uri;
+    try_files $uri $uri/ /mpg/index.html?/$request_uri;
   }
 }.
