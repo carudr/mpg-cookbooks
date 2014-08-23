@@ -43,7 +43,7 @@ server {
   location / {
     root   <%= @application[:absolute_document_root] %>;
     index  index.html index.htm index.php;
-    try_files $uri $uri/ /mpg/index.html?/$request_uri;
+    try_files $uri $uri/ /index.html?/$request_uri;
   }
   
   # Block all svn access
